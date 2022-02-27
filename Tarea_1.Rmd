@@ -1,0 +1,42 @@
+---
+title: "Tarea 1"
+author: "Paola Calderón"
+date: '2022-02-26'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Ejercicio 1
+```{r}
+
+ciudad <- "Cuenca"
+print (ciudad)
+```
+
+##Ejercicio 2
+```{r}
+pais_andes <- c("Ecuador,Colombia,Perú")
+print (pais_andes)
+```
+
+##Ejercicio 3
+```{r}
+paises_latam = data.frame (latam = paste0("numero_pais", 1:12), Nombre = c( "Venezuela","Colombia","Ecuador", "Peru", "Chile", "Argentina","Bolivia","Paraguay","Uruguay","Brasil","Surinam","Guyanas"), Capital = c("Caracas","Bogotá","Quito","Lima", "Santiago de Chile","Buenos Aires", "Sucre", "Asuncion","Montevideo","Brasilia","Paramaribo","Georgetown"), "Num_ciudades" = c(24,18,19,26,15,20,17,15,16,50,8,7), "Sal_min_dolar"= c(3.5,244.0,425.0,213.15,411.12,233.35,317.25,355.45,121.76,214.15,8.14,242.55))
+paises_latam 
+```
+
+##Ejercicio 4
+```{r}
+?DNase
+print(head (DNase,4))
+```
+
+```{r}
+concentracion = subset(DNase, conc >= 0.1 & conc <= 0.2)
+print (concentracion)
+```
+
+
