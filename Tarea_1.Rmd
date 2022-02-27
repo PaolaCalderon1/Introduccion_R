@@ -39,4 +39,8 @@ concentracion = subset(DNase, conc >= 0.1 & conc <= 0.2)
 print (concentracion)
 ```
 
+```{r}
+concentracion1 = subset(DNase, Run != 2 & conc > 0.2 & density <= 1.0)
+print(concentracion1)
+```
 
